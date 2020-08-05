@@ -715,13 +715,11 @@ body, input, button, select, optgroup, textarea {
 #dw-themes {
 	background: white;
     padding: 30px;
-}
-#dw-themes .blog-grid-container {
-    grid-gap: 15px;
+	grid-gap: 15px !important;
 }
 #dw-themes .blog-grid-item .img-thumb {
-    height: 173px !important;
-    border-radius: 0.625rem !important;
+	height: 159px !important;
+    transition: transform 0.1s ease;
 }
 #dw-themes .hover-shadow-3d:hover {
     box-shadow: rgba(42, 42, 114, 0.1) 0.5rem 0.5rem 0px;
@@ -738,7 +736,7 @@ body, input, button, select, optgroup, textarea {
     text-align: center;
 }
 
-#dw-themes .firstpage .blog-grid-item:nth-child(1), #dw-themes .firstpage .blog-grid-item:nth-child(2), #dw-themes .firstpage .blog-grid-item:nth-child(3) {
+#dw-themes .blog-grid-item:nth-child(1), #dw-themes .blog-grid-item:nth-child(2), #dw-themes .blog-grid-item:nth-child(3) {
     display: none;
 }
 #dw-themes .blog-grid-item .card:hover .card-title a {
