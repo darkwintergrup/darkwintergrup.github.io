@@ -697,10 +697,10 @@ body, input, button, select, optgroup, textarea {
     margin: 0;
     padding: 0;
 }
-
 .dwhome-css a {
-	background: white;
+    background: white;
     color: black;
+    border: none;
     margin-right: 10px;
     padding: 10px;
     font-weight: 600;
@@ -709,7 +709,7 @@ body, input, button, select, optgroup, textarea {
 }
 .dwhome-css a:hover {
     text-decoration: none;
-    color: #00c5a1;
+    color: black;
 }
 
 
