@@ -1,413 +1,627 @@
+
 <!DOCTYPE html>
-<html id="html">
-<head lang="en">
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <meta name="viewport" content="width=device-width"/>
-    <title>DarkWinter GRUP Supported Themes</title>
-    <style type="text/css">
-        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-            margin: 0;
-            padding: 0;
-        }
-        * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-        :before, :after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-        img, object, embed {max-width: 100%; height: auto;}
-        object, embed {height: 100%;}
-        img { margin: 1.25% 0; -ms-interpolation-mode: bicubic; }
-        html {
-            background-color: #F0F1F3;
-            padding: 2%;
-        }
-        body {
-            font-size: 16px;
-            line-height: 1.6;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            color: #242424;
-            max-width: 800px;
-            margin: 5% auto;
-           
-        }
-        body::after {
-            clear: both;
-            content: "";
-            display: table;
-        }
-        header {
-            margin-bottom: 8%;
-        }
-        footer {
-            text-align: center;
-        }
-        h1, h2, h3, h4, h5, h1 a {
-            color: #263A48;
-            font-weight: 500;
-            text-decoration: none;
-        }
-        h1, h2 {
-            font-size: 36px;
-            padding-bottom: 0.3em;
-            margin-bottom: 0.4em;
-            border-bottom: 1px solid #eee
-        }
-        h2 {
-            font-size: 22px;
-            padding-bottom: 0.6em;
-            margin-bottom: 0.6em;
-            margin-top: 2.5em;
-        }
-        h3 {
-            font-size: 18px;
-            margin-bottom: 0.3em;
-        }
-        h1 small a {
-            color: #98999C;
-            font-size: 15px;
-            font-weight: normal;
-            float: right;
-            position: absolute;
-            top: 15px;
-            right: 20px;
-        }
-        section {
-            background: #fff;
-            margin-bottom: 1%;
-            position: relative;
-            padding: 6% 8%;
-        }
-        blockquote {
-            border-left: 3px solid #d54e21;
-            font-size: 16px;
-            padding: 0 0 0 20px;
-            color: #d54e21;
-        }
-        blockquote a {
-            color: #d54e21;
-            font-weight: 500;
-        }
-        blockquote code {
-            color: #d54e21;
-        }
-        code, cite {
-            background-color: #F0F2F4;
-            border-radius: 3px;
-            color: #000;
-            font: inherit;
-            padding: 2px 7px;
-            white-space: normal;
-        }
-        a {
-            color: #1e8cbe;
-            text-decoration: underline;
-        }
-        a:hover {
-            color: #d54e21;
-        }
-        ul {
-            list-style: none;
-        }
-        ol {
-            list-style: number;
-        }
-        ol li {
-            color: #98999C;
-            margin-bottom: 5px;
-        }
-        ol li:last-child {
-            margin-bottom: 0;
-        }
-        p, ul, ol, blockquote  {
-            margin-bottom: 4%;
-        }
-        ul ul {
-            padding-top: 0;
-            margin-bottom: 0;
-            margin-left: 4%;
-        }
-        ul ul li:before {
-            content: '-';
-            display: inline-block;
-            padding-right: 2%;
-        }
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        ul.col-2 {
-            color: #98999C;
-            -webkit-column-count: 2;
-            -moz-column-count: 2;
-            column-count: 2;
-            -webkit-column-gap: 20px;
-            -moz-column-gap: 20px;
-            column-gap: 20px;
-        }
+<link rel="icon" href="/temalar/assets/images/logo.png">
 
-        @media screen and (min-width: 500px) {
-            ul.col-2 {
-                -webkit-column-count: 3;
-                -moz-column-count: 3;
-                column-count: 3;
-                -webkit-column-gap: 20px;
-                -moz-column-gap: 20px;
-                column-gap: 20px;
-            }
-        }
-        nav {
-            background: #F0F1F3;
-            min-width: 215px;
-            margin-bottom: 5px;
-            margin-top: 15px;
-        }
-        nav:first-of-type a {
-            color: #d54e21;
-            border-radius: 0;
-        }
-        nav:first-of-type a:hover {
-            color: #d54e21;
-        }
-        nav:first-of-type a:before {
-            background-color: #d54e21;
-        }
-        nav.affix {
-            position: fixed;
-            top: 20px;
-        }
-        nav.affix-bottom {
-            position: absolute;
-        }
-        nav a {
-            border-radius: 3px;
-            font-size: 15px;
-            display: block;
-            cursor: pointer;
-            font-weight: 500;
-            position: relative;
-            text-decoration: none; 
-            padding: 10px 12px;
-            width: 100%;
-            padding-right: 3px;
-            border-bottom: 2px solid #fff;
-        }
-        nav a:before {
-            content: '';
-            width: 4px;
-            display: block;
-            left: 0;
-            position: absolute;
-            height: 100%;
-            display: none;
-            background: #1e8cbe;
-            top: 0;
-        }
-        nav a:hover {
-            background-color: #E6E8EA;
-            color: #1e8cbe;
-            text-decoration: underline;
-        }   
-        nav a:hover:before {
-            display: block;
-        }
-        nav a:last-of-type {
-            border-bottom: none;
-        }
-        .gist {
-            margin-top: 5.1%;
-            margin-bottom: 5%;
-        }
-        @media screen and (max-width: 1050px) {
-            body {
-                margin: 0 auto;
-            }
-        }
-        @media screen and (max-width: 767px) {
-            header span {
-                display: none;
-            }
-            h1 {
-                font-size: 26px;
-            }
-            h2 {
-                font-size: 20px;
-            }
-        }   
-        @media screen and (max-width: 514px) {
-            p, ul, ol, blockquote  {
-                margin-bottom: 8%;
-            }
-        }
-        .alert {
-            padding: 4% 4% 1px 4%;
-            background: #c23616;
-            color: white;
-            margin-bottom: 40px;
-        }
-        iframe {
-        	max-width: 100%;
-        }
-    </style>
+<title>Home | DarkWinterGRUP Blog - The Miracle of Digital Arts | Bir Dijital Sanat Mucizesi</title>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Home | DarkWinterGRUP Blog - Graphic, Content, WordPress Design &amp; Support Blog</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We will take you on the unique world of exploration. Content, design, snippets, inspiration, wordpress and much more.Eat, Pray, Love!" />
+<meta property="og:description" content="We will take you on the unique world of exploration. Content, design, snippets, inspiration, wordpress and much more.Eat, Pray, Love!" />
+<link rel="canonical" href="https://darkwintergrup.github.io/blog/" />
+<meta property="og:url" content="https://darkwintergrup.github.io/blog/" />
+<meta property="og:site_name" content="DarkWinterGRUP Blog - Graphic, Content, WordPress Design &amp; Support Blog" />
+<link rel="next" href="https://darkwintergrup.github.io/blog/page2/" />
+<script type="application/ld+json">
+{"description":"We will take you on the unique world of exploration. Content, design, snippets, inspiration, wordpress and much more.Eat, Pray, Love!","@type":"WebSite","headline":"Home","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://darkwintergrup.github.io/temalar/assets/images/logo-dw.png"}},"url":"https://darkwintergrup.github.io/blog/","name":"DarkWinterGRUP Blog - Graphic, Content, WordPress Design &amp; Support Blog","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/temalar/assets/css/prism.css" rel="stylesheet">
+
+<link href="/temalar/assets/css/theme.css" rel="stylesheet">
+
+<script src="/temalar/assets/js/jquery.min.js"></script>
+
 </head>
 
+
+<!-- change your GA id in _config.yml -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-xxxxxxxx-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
 <body>
-    <section id="Menu">
-        <header>
-            <h1>Uptime WordPress Theme Documentation</h1>
-            <p>Set-up & general guide to help you get the most out of your new WordPress theme. If you are still having trouble after reading this guide, <a href="https://www.tommusrhodus.com/contact/">head to our dedicated support area and create a ticket.</a>.</p>
-        </header>
-        <nav>
-            <a href="http://uptime.tommusdemos.wpengine.com" target="blank">Live Demo</a>
-            <a href="https://themeforest.net/item/uptime-modular-responsive-wordpress-theme-for-business/23863765">Changelog</a>
-            <a href="https://themeforest.net/item/uptime-modular-responsive-wordpress-theme-for-business/23863765">Buy Uptime WordPress Theme</a>
-			<a href="http://tommusrhodus.github.io/uptime-wordpress-theme/">Online Documentation Here</a>
-        </nav>
-        <nav>
-            <a href="#Welcome">Welcome</a>
-            <a href="#GettingStarted">Getting Started</a>
-            <a href="#FallbackSetup">Manual Setup</a>
-            <a href="#ThemeOptions">Theme Options</a>
-            <a href="#ThemeOverrides">Theme Overrides</a>
-            <a href="#CreatingMenus">Creating Menus</a>
-            <a href="#Widgets">Using Widgets</a>
-            <a href="#UsingElementor">Using Elementor Page Builder</a>
-            <a href="#SpecialCSSClasses">Special CSS Classes</a>
-            <a href="#CustomVCBlocks">Custom Page Builder Blocks</a>
-            <a href="#Shortcodes">Shortcodes</a>
-            <a href="#PostsOverview">Posts Overview</a>
-            <a href="#PortfolioOverview">Portfolio Overview</a>
-            <a href="#TeamOverview">Team Overview</a>
-            <a href="#DocumentationOverview">Documentation Overview</a>   
-            <a href="#ClientsOverview">Clients Overview</a>     
-            <a href="#TestimonialOverview">Testimonials Overview</a>            
-            <a href="#ContactForm7">Contact Form 7 Overview</a>
-            <a href="#Translating">Translating Your Theme</a>            
-            <a href="#Developers">Developing with Uptime</a>
-            <a href="#CommonIssues">Common Issues</a>
-            <a href="#Tweaks">Tweaks and Knowledgebase</a>
-            <a href="#SupportPolicy">Support Policy</a>
-            <a href="#Credits">Credits</a>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
 
-        </nav>
-    </section>
+<!-- Begin Sidebar Navigation
+================================================== -->
 
-    <section id="Welcome">
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/blog/">Home</a></li>
+        <li><a href="/blog/about">About <span class="badge badge-primary">DarkWinterGrup</span></a></li>
+        <li><a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/jekyll-theme-memoirs/">Get This Theme</a></li>      
+        <li><a href="/blog/contact">Contact</a></li>       
+    </ul>   
+</nav>
 
-        <h1><a href="#Welcome">Welcome</a><small><a href="#html">Back to Top</a></small></h1>
+<script src="/temalar/assets/js/lunr.js"></script>
 
-        <p>Welcome, and thank you for choosing a TommusRhodus theme.</p>
-        <p>We pride ourselves on providing excellent documentation so this guide will help you get the most from your new theme. We will take you through everything from installing the theme, to creating menus, using the theme options and much more. Please take a moment to read through the articles below to familiarise yourself with your new theme and of course, if you need any assistance along the way, <a href="https://www.tommusrhodus.com/contact/">we are always on hand to help.</a></p> 
+<style>
+    
+</style>
 
-        <p>We also have a number of video tutorials which detail certain aspects of Uptime - check out our <a href="https://www.youtube.com/watch?v=9R2Y5Pqvksk&list=PL6VzCcNewv9gx2xX04oSYovh9DkyuWw-6" target="_blank">YouTube playlist here.</a></p>
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
 
-    </section>
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
 
-    <section id="GettingStarted">
-
-        <h1><a href="#GettingStarted">Getting Started</a><small><a href="#html">Back to Top</a></small></h1>
-
-        <p>This document covers the installation, set up, and use of this theme, and provides answers and solutions to common problems. We encourage you to first read this document thoroughly if you are experiencing any difficulties before contacting our support team.</p> 
-
-        <h2>Uploading Through WordPress</h2>
-        <p>To upload through your Dashboard, select “Appearance” and then “Themes”. Next, select the “Install Themes” tab at the top of the page and then select the “Upload” link, right above the search field. Choose your file and select “Install Now”. Once the theme is fully uploaded and installed, click “Activate” to activate the WordPress theme.</p>
-        <blockquote>The theme files will be stored on your server in the <code>wp-content/themes</code> location.</blockquote>
-        <p>When uploading your theme with the installer, please ensure you are uploading the theme .zip file, not the entire package you downloaded. In this case, you will be uploading UptimeWPtheme.zip.</p>
-
-        <h2>FTP Upload</h2>
-        <p>To manually upload your new WordPress theme, login with your credentials to your website and locate the wp-content folder in your WordPress install files. Upload the <b>un-zipped</b> Uptime WordPress Theme folder into the: wp-content/themes folder. </p>
-        <p>Once uploaded, activate the theme by heading to the “Themes” menu in the WordPress Dashboard. Locate the Uptime WordPress Theme theme and hit “Activate”.</p>
-
-        <p>Looking for a good, free FTP solution - why not try <a href="https://filezilla-project.org/">FileZilla</a> or <a href="https://cyberduck.io/?l=en">CyberDuck</a></p>
-
-        <br><br>
-
-        <iframe width="660" height="345" src="https://www.youtube.com/embed/7-8uPEmKCxE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <br><br>
-
-    </section>  
-
-    <section id="FallbackSetup">
-
-        <h1><a href="#FallbackSetup">Fallback Setup</a><small><a href="#html">Back to Top</a></small></h1>
-
-        <p>Although we take the greatest care to make the setup process as simple as possible, in some cases (esspecially on budget hosting where resources and at a bare minimum) you may experience an issue during the automatic setup - this section covers an alternative fallback method you can use should the need arise.</p> 
-
-        <h2>Importing The Demo Data Manually</h2>
-        <p>The first thing we need to clarify is setting up manually will mean things like widgets and theme options wont be setup for you - this is unavoidable but it will still give you a great base of all the demo pages ready for you to start building your new site.</p>
-        <p>To begin, install <a href="https://wordpress.org/plugins/attachment-importer/">Attachment Importer</a> - this is a lightweight importing tool for images and will be needed later on to import the demo images/media. Once done, head to Tools > Import and select WordPress to open up WPs built in importing tool (you may need to install it to continue)</p>
+<script src="/temalar/assets/js/lunrsearchengine.js"></script>
 
 
-        <h2>Uploading the XML File</h2>
-        <p>Next you will need to locate the themes demo-data.xml file, this will be included in the Demo Data folder in your main download package. Once located select this file and hit "upload". Next you will see a page which will allow you to choose if you wish to assign the demo posts to another user, as well as an option to import all media and attachments - <strong>be sure to leave this box unchecked</strong> as we will be taking care of this later (and want the import to be as light as possible to be more likley to work)</p>
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content  firstpage ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/blog/">
+        <img src="/temalar/assets/images/logo-dw.png" alt="DarkWinterGRUP Blog - The Miracle of Digital Arts | Bir Dijital Sanat Mucizesi">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+        <p class="sitetag">
+            We will take you on the unique world of exploration. Content, design, snippets, inspiration, wordpress and much more.<br>Eat, Pray, Love!
+        </p>
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <!-- Posts Index
+================================================== -->
+<div class="blog-grid-container">
+    
+        <!-- begin post -->
 
 
-        <p>Once done you will see a notice informing you the operation is complete.</p>
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/les-ambassadeurs/">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/1.jpg" alt="Les Ambassadeurs, the first Restaurant we Visited in Paris">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/les-ambassadeurs/">Les Ambassadeurs, the first Restaurant we Visited in Paris</a>
+                
+                <div class="mb-2 mt-2 font-weight-normal">
+                <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="4.5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>
+                </div>
+                
+            </h2>
+            <h4 class="card-text">Within the Hôtel de Crillon, which was built in 1758, Les Ambassadeurs operated as a restaurant since the mid-19th century. It reached its peak of fame as a restaurant and...</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">02 Feb 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
 
 
-        <h2>Importing the Images</h2>
-        <p>Now you have the pages imported, its time to tackle the images. If you have not already done so, install and activate <a href="https://wordpress.org/plugins/attachment-importer/">Attachment Importer</a> and once done, head to Tools > Import and select the newly added Attachment Import from the list of tools to continue.</p>       
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/much-more-than-a-desert-trip-to-sahara/">
+                
 
-        <br><br>
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/2.jpg" alt="Much more than a desert: A trip into the Sahara">
+                    
 
-        <p>Once here, locate the demo XML file and upload - once done hit "Import" and allow the process to take place. Depending on the number of images this process will take some time, so be sure to leave your browser alone whilst its happening (though you can of course open another tab and continue to browse freely)</p>
-
-        <iframe width="660" height="345" src="https://www.youtube.com/embed/W2oQ7iDc8u0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <br><br>
-
-        <h2>Final Step</h2>
-        <p>Ok so you now have the pages and images all imported and ready, you now need to simply setup your homepage/blog and menu. To do this head to Settings > Reading to choose your homepage and posts page, and then head to Appearance > Menus to assign the demo menus.</p>   
-
-        <h4>Important Note</h4>
-        <p>If you have imported the demo data, you will notice the "new" badge displayed in the coworking menu item looks a little different to the demo (see below)</p>
-
-        <br><br>
-
-        <p>This is because typically the import process does not account for HTML within menu items - to remedy this you can edit the menu item and replace the text with the following HTML</p>
-
-        <pre>&#x3C;span class=&#x22;badge badge-primary ml-2&#x22;&#x3E;New&#x3C;/span&#x3E;</pre>
-        <br>
-        <p>Once done you will see the following result</p>
-
-        <br><br>
-
-
-    </section>   
-
-    <section id="CommonIssues">
-
-        <h1><a href="#CommonIssues">Common Issues</a><small><a href="#html">Back to Top</a></small></h1>
-
-        <h2>Im seeing a 'stylesheet missing' error when trying to upload the theme</h2>
-        <p>This means your uploading the wrong zip package. When downloading your theme you have the option to download the full package, or the installable theme itself.</p>
-
-        <br><br>
-        <p>Then drop that ID into Appearance > Customize > Header Settings > Button Settings like this, or as the URL to a custom button etc like this</p>
-
-        <br><br>
-
-        <h2>Im setting a max_upload_size error when trying to upload the theme</h2>
-        <p>Some hosting, especially budget shared hosting, may impose file restrictions for uploads to your WP site. In some cases, installing this plugin and work very well https://wordpress.org/plugins/increase-upload-max-filesize/ however if it fails to work then you will need to contact your hosts to they can make the necessary changes from there end as this is something we cannot help with from a theme point of view.We suggest 
-        <br><br>
-
-        <h2>Where is my Visual Composer/Revolution license?</h2>
-        <p>Premium plugins such as Revolution Slider and Visual Composer may request a purchase code during use. This code is used to provide direct updates and support from the plugins creator and as such is not required or supplied for use with our themes. Our frameworks have been carefully create to ensure your running the latest compatible version at all times, so you have no need to worry. Please note that we manually update our bundled plugins after thorough testing as some plugin updates have bugs that we are unhappy to ship to our customers, you will receive updates when we are happy with the plugin. If you truly require auto-updates from these plugins you’ll need to purchase a personal license, please note this is the same for each theme on themeforest that bundles plugins.</p>
-
-        <br><br>
-
-        <h2>Im getting a 404 error when viewing my portfolio/team etc</h2>
-        <p>WordPress is a rock solid platform in most cases, but sometimes, when working with a new theme for instance, it needs a little nudge to update all of its core settings etc. If your seeing a 404 error or such when trying to view your projects (or team members, clients etc - depending on your theme)</p>
-
-        <p>To do this, simply head to Settings > Permalinks and select 'postname' from the options listed - even if this option is already selected, hit save anyway (this is the nudge we mentioned earlier) - Once done, you should be able to view all your content with no issues.</p>
-
-        <p>Should any issues remain, this indicates an issue with your server (the theme has no control of this) so you will need to contact your hosts for further support.</p>
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/much-more-than-a-desert-trip-to-sahara/">Much more than a desert: A trip into the Sahara</a>
+                
+            </h2>
+            <h4 class="card-text">The Sahara is a desert located on the African continent. It is the largest hot desert in the world, and the third largest desert overall after Antarctica and the Arctic....</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">01 Feb 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
 
 
-        <br><br>
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/one-day-just-started-adventure/">
+                
 
-        <h2>My site is slow to load, why?</h2>
-        <p>As you saw when viewing the demos of our themes, our themes are capable of being blisteringly fast, however you may ocationally notice your site is not loading as fast as you hoped – here you can find some tips for ensuring your new site loads as quickly as possible http://www.tommusrhodus.com/speeding-up-wordpress/</p>
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/3.jpg" alt="One day we just started our adventure">
+                    
 
-    </section>  
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/one-day-just-started-adventure/">One day we just started our adventure</a>
+                
+            </h2>
+            <h4 class="card-text">The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.
 
-    <section id="Credits">
-        <footer>
-            <a href="http://tommusrhodus.github.io/uptime-wordpress-theme/" target="blank">Uptime WordPress Theme</a>, Another Premium WordPress Theme by <a href="https://www.tommusrhodus.com" target="blank">TommusRhodus</a></a>
-        </footer>
-    </section>
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">12 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/london/">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/4.jpg" alt="London is that kind of place you must visit in this lifetime">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/london/">London is that kind of place you must visit in this lifetime</a>
+                
+            </h2>
+            <h4 class="card-text">The Queen’s Guard and Queen’s Life Guard (called King’s Guard and King’s Life Guard when the reigning monarch is male) are the names given to contingents of infantry and cavalry...</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">12 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/external-featured-image/">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="https://images.unsplash.com/photo-1509731987499-fd9bba3a46cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Memoirs supports external images as featured">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/external-featured-image/">Memoirs supports external images as featured</a>
+                
+            </h2>
+            <h4 class="card-text">Adding images is a very annoying task, I know that, but “Memoirs” theme has external featured images integrated so your publishing task becomes easier now.
+
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">12 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/post-with-spoiler">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/5.jpg" alt="Spoliers Inside - a film review needs hidden spoilers like this post">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/post-with-spoiler">Spoliers Inside - a film review needs hidden spoilers like this post</a>
+                
+            </h2>
+            <h4 class="card-text">Director Roland Suso Richter’s enigmatic psychological thriller (direct to video/DVD) was based upon screenwriter Michael Cooney’s own play “Point of Death” - a title that gave away the film’s entire...</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">11 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/that-day-we-almost-missed-flight/">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/6.jpg" alt="That day when we almost missed our flight">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/that-day-we-almost-missed-flight/">That day when we almost missed our flight</a>
+                
+            </h2>
+            <h4 class="card-text">The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the...</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">01 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/review-oscar/">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/7.jpg" alt="Reviewing the best Oscar movies of all time">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/review-oscar/">Reviewing the best Oscar movies of all time</a>
+                
+                <div class="mb-2 mt-2 font-weight-normal">
+                <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="4.5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>
+                </div>
+                
+            </h2>
+            <h4 class="card-text">Review products, books, movies, restaurant and anything you like on your Jekyll blog with Memoirs! JSON-LD ready for review property.
+
+</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">01 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+        <!-- begin post -->
+
+
+<div class="blog-grid-item">
+    <div class="card h-100">
+        <div class="maxthumb">
+            <a href="/blog/french-wine/">
+                
+
+                    
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/temalar/assets/images/posts/11.jpg" alt="French Wine has to compete with many new world wines">
+                    
+
+                
+            </a>
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                <a class="text-dark" href="/blog/french-wine/">French Wine has to compete with many new world wines</a>
+                
+            </h2>
+            <h4 class="card-text">French wine is produced all throughout France, in quantities between 50 and 60 million hectolitres per year, or 7–8 billion bottles. France is one of the largest wine producers in...</h4>
+        </div>
+        <div class="card-footer bg-white">
+            <div class="wrapfooter">
+                
+                <span class="meta-footer-thumb">
+                
+                <img class="author-thumb" src="/temalar/assets/images/dwg-profile.jpg" alt="DarkWinterGRUP">
+                
+                </span>
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGRUP</a></span> 
+                
+                <span class="post-date">01 Jan 2020</span>
+                </span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end post -->
+    
+</div>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    
+<div class="pagination">
+  
+    <span>&laquo; </span>
+  
+
+  
+    
+      <span class="ml-1 mr-1">1</span>
+    
+  
+    
+      <a class="ml-1 mr-1" href="/blog/page2/">2</a>
+    
+  
+
+  
+    <a class="ml-1 mr-1" href="/blog/page2/"> &raquo;</a>
+  
+</div>
+
+</span>
+</div>
+
+
+    </div>
+
+    
+    <!-- Newsletter
+    ================================================== -->
+    <div class="newsletter text-center">
+        <span class="h4"><img src="/temalar/assets/images/logo-dw.png" class="newsletter-logo" alt="DarkWinterGRUP Blog - Graphic, Content, WordPress Design & Support Blog"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group d-inline-flex">
+            <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+    </div>
+    
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 text-center text-lg-left">
+                Copyright © 2020<br>DarkWinterGRUP Blog - The Miracle of Digital Arts | Bir Dijital Sanat Mucizesi 
+            </div>
+            <div class="col-md-4 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGrup</a> BLOG
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/temalar/assets/js/prism.js"></script>
+
+<script src="/temalar/assets/js/theme.js"></script>
+
+
+<script src="/temalar/assets/js/lazyload.js"></script>
+
+
+
 
 </body>
 </html>
