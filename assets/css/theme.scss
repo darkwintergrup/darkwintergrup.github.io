@@ -693,7 +693,7 @@ body, input, button, select, optgroup, textarea {
     border-bottom: 1px solid #f1f1f1;
 }
 .dwhome-css {
-	max-width: 100%;
+	max-width: 100% !important;
     margin: 0;
     padding: 0;
 }
@@ -768,6 +768,11 @@ body, input, button, select, optgroup, textarea {
 	}
 	.dwhome-css a {
     display: block;
+	}
+	.dwhome-css {
+	max-width: 100% !important;
+    margin: 0;
+    padding: 0;
 	}
 }
 @media (max-width: 768px) {
