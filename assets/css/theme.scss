@@ -712,22 +712,49 @@ body, input, button, select, optgroup, textarea {
     text-decoration: none;
     color: black;
 }
-
+#dw-themes {
+	background: white;
+    padding: 30px;
+}
 #dw-themes .blog-grid-container {
     grid-gap: 15px;
 }
 #dw-themes .blog-grid-item .img-thumb {
     height: 173px !important;
+    border-radius: 0.625rem !important;
+}
+#dw-themes .hover-shadow-3d:hover {
+    box-shadow: rgba(42, 42, 114, 0.1) 0.5rem 0.5rem 0px;
+    transform: translate3d(-4px, -4px, 0px) rotateZ(-1deg);
 }
 #dw-themes .blog-grid-item .card-title {
     font-size: 15px !important;
     line-height: 1.5 !important;
-    text-align: center;
-    margin: 0;
+    margin-bottom: 5px;
     padding: 0;
 }
+#dw-themes .card-body {
+    padding: 15px;
+    text-align: center;
+}
 
-
+#dw-themes .firstpage .blog-grid-item:nth-child(1), #dw-themes .firstpage .blog-grid-item:nth-child(2), #dw-themes .firstpage .blog-grid-item:nth-child(3) {
+    display: none;
+}
+.blog-grid-item .card:hover .card-title a {
+    background-size: 0;
+}
+#dw-themes .card-body .btn {
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.625rem !important;
+    color: #fff;
+    background-color: #202056;
+    border-color: #202056;
+    padding: 10px;
+    min-width: 125px;
+}
 
 
 
