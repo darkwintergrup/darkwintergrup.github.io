@@ -713,6 +713,21 @@ body, input, button, select, optgroup, textarea {
     color: black;
 }
 
+#dw-themes .blog-grid-container {
+    grid-gap: 15px;
+}
+#dw-themes .blog-grid-item .img-thumb {
+    height: 173px !important;
+}
+#dw-themes .blog-grid-item .card-title {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 
 
