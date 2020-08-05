@@ -79,11 +79,9 @@ ga('send', 'pageview');
 
     <!-- Site Tag
     ================================================== -->
-    {% if page.url == '/' %}
-        <p class="sitetag">
-            {{ site.description }}
-        </p>
-    {% endif %}
+<p class="sitetag" style="background: white; padding: 50px;">
+            We will take you on the unique world of exploration. Content, design, snippets, inspiration, wordpress and much more.<br>Eat, Pray, Love!
+</p>
 
     <!-- Content
     ================================================== -->
@@ -91,19 +89,6 @@ ga('send', 'pageview');
         {{ content }}
     </div>
 
-    {% if site.mailchimp-list %}
-    <!-- Newsletter
-    ================================================== -->
-    <div class="newsletter text-center">
-        <span class="h4"><img src="{{ site.baseurl }}/{{ site.logo }}" class="newsletter-logo" alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
-        <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
-            <div class="mc-field-group d-inline-flex">
-            <input type="email" placeholder="Your e-mail" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
-            <input type="submit" value="Subscribe" name="subscribe" class="heart">
-            </div>
-        </form>
-    </div>
-    {% endif %}
     
 </div>
 
@@ -113,7 +98,7 @@ ga('send', 'pageview');
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+                Copyright © {{ site.time | date: "%Y" }}<br>{{ site.name }} 
             </div>
 			<div class="col-md-4 col-sm-12 text-center text-lg-right">    
                 <a target="_blank" href="https://www.instagram.com/darkwintergrup/">DarkWinterGrup</a> Website
