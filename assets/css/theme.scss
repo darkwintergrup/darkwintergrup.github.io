@@ -606,6 +606,93 @@ body.active-side {
     background:#fff;
 }
 
+//DarkWinterGRUP
+.blog-grid-item .img-thumb {
+height: 226px !important;
+}
+.firstpage .blog-grid-item:nth-child(1) .img-thumb {
+height: 460px !important;
+}
+.firstpage .blog-grid-item:nth-child(1) .card-text {
+display: block !important;
+}
+.blog-grid-item .card-text {
+display: none !important;
+}
+.blog-grid-item .card-title {
+font-size: 21px !important;
+line-height: 1.3 !important;
+}
+.blog-grid-item .card-footer {
+font-size: 12px !important;
+padding: 0 1.25rem 1.25rem !important;
+}
+.blog-grid-item .author-thumb {
+width: 25px !important;
+margin-right: 4px !important;
+}
+.blog-grid-item .post-date {
+margin-top: 0 !important;
+}
+.bottompagination {
+margin: 5rem 0 0 0 !important;
+}
+.navbar-brand img {
+    max-height: 55px !important;
+    margin: 25px 0;
+}
+.navbar-brand {
+    background: white;
+    width: 100%;
+    margin: 0 0 50px;
+    padding: 0;
+    left: 0;
+    text-align: center;
+}
+.newsletter img.newsletter-logo {
+    max-height: 50px !important;
+    margin-right: 50px;
+}
+body, input, button, select, optgroup, textarea {
+    font-family: 'DM Sans' !important;
+}
+.article-post {
+    background-color: #fff;
+    padding: 50px !important;
+    max-width: 790px !important;
+}
+.rating {
+    background-color: #fff;
+    padding: 50px !important;
+    max-width: 790px !important;
+}
+.related-posts .blog-grid-item .card-text {
+    display: none !important;
+}
+.authorbox {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 50px !important;
+    max-width: 790px !important;
+	/* border: 1px solid #0a0a0a; */
+}
+.authorbox:after {
+	background: #40FFDC;
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 8px;
+    right: -1px;
+    height: 4px;
+    pointer-events: none;
+}
+#menu ul li {
+    border-bottom: 1px solid #f1f1f1;
+}
+
 //responsive tweaks
 @media (min-width: 768px) {
     .container, .container-sm, .container-md, .container-lg {
@@ -626,10 +713,36 @@ body.active-side {
     .blog-grid-container {
         grid-template-columns: 1fr 1fr;
     }
+	//DarkWinterGRUP
+	.navbar-brand img {
+	max-height: 45px !important;
+    margin-bottom: 30px;
+    margin-top: 30px;
+	}
     .newsletter img.newsletter-logo {
         max-height: 50px;
         float: left;
+		display: block;
+		width: auto;
+		height: auto;
+		margin: -40px 75px 40px;
     }
+	.article-post {
+    padding: 25px !important;
+	}
+	.authorbox {
+    padding: 25px !important
+	}
+	.authorbox .col-md-2 {
+    display: none;
+	}
+	.authorbox .text-dark.h4 {
+    font-weight: bold;
+    font-size: 15px;
+	}
+	.authorbox .author-description {
+    font-size: 15px;
+	}
 }
 @media (max-width: 768px) {
     .posttitle {
