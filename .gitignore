@@ -1,5 +1,7 @@
-$ cat .gitignore
-
-# Can ignore specific files
+_site
 .DS_Store
-*.esproj
+Gemfile.lock
+*.swp
+.sass-cache
+*~
+.jekyll-cache

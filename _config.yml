@@ -1,27 +1,36 @@
 # Site
-name: "DarkWinterGRUP Blog - The Miracle of Digital Arts | Bir Dijital Sanat Mucizesi"
-title: "DarkWinterGRUP Blog - Graphic, Content, WordPress Design & Support Blog"
-description: "We will take you on the unique world of exploration. Content, design, snippets, inspiration, wordpress and much more.<br>Eat, Pray, Love!"
-logo: 'assets/images/logo-dw.png'
-favicon: 'assets/images/favicon.png'
-baseurl: /
+name: "Memoirs"
+title: "Memoirs"
+description: "I will take you on the fabulous world of exploration. Travel, culture, lifestyle. Eat, Pray, Love!"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /jekyll-theme-memoirs
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-email: darkwintergrup@gmail.com
+email: wowthemesnet@gmail.com
 
 # Authors
 authors:
-  darkwintergrup:
-    name: DarkWinterGRUP
-    display_name: DarkWinterGRUP
-    avatar: 'assets/images/dwg-profile.jpg'
-    email: darkwintergrup@gmail.com
-    web: https://www.instagram.com/darkwintergrup/
-    twitter: https://www.instagram.com/darkwintergrup/
-    description: "The Miracle of Digital Arts | Bir Dijital Sanat Mucizesi <br>Graphic, Content, WordPress Design & Support Services<br>Freelancer - Contact Mail & Instagram."
+  sal:
+    name: Sal
+    display_name: Sal
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/donate/
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John    
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
 # Plugins
 plugins:
@@ -41,14 +50,11 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 9
+paginate: 6
 paginate_path: /page:num/
     
 # Other
-lsi: false
-safe: true
-incremental: false
-highlighter: rouge
+highlighter: none
 markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
@@ -62,10 +68,10 @@ adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
+lazyimages: "disabled"
 
 # Post Author Box ("enabled" or "disabled")
-authorbox: "enabled"
+authorbox: "disabled"
 
 # Sass
 sass:
