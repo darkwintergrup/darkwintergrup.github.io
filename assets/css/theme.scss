@@ -741,7 +741,7 @@ body, input, button, select, optgroup, textarea {
 #dw-themes .firstpage .blog-grid-item:nth-child(1), #dw-themes .firstpage .blog-grid-item:nth-child(2), #dw-themes .firstpage .blog-grid-item:nth-child(3) {
     display: none;
 }
-.blog-grid-item .card:hover .card-title a {
+#dw-themes .blog-grid-item .card:hover .card-title a {
     background-size: 0;
 }
 #dw-themes .card-body .btn {
