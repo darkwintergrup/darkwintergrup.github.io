@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Temalar DarkWinter GRUP Blog
-permalink: /temalar
+permalink: /desteklenen-temalar
 comments: false
 image: assets/images/pages/about.jpg
 ---
