@@ -702,6 +702,7 @@ body, input, button, select, optgroup, textarea {
     color: black;
     border: none;
     margin-right: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     font-weight: 600;
     font-size: 14px;
@@ -742,12 +743,12 @@ body, input, button, select, optgroup, textarea {
     margin-top: 30px;
 	}
     .newsletter img.newsletter-logo {
-        max-height: 50px;
-        float: left;
-		display: block;
-		width: auto;
-		height: auto;
-		margin: -40px 75px 40px;
+	max-height: 50px;
+	float: left;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: -40px 75px 40px;
     }
 	.article-post {
     padding: 25px !important;
@@ -764,6 +765,9 @@ body, input, button, select, optgroup, textarea {
 	}
 	.authorbox .author-description {
     font-size: 15px;
+	}
+	.dwhome-css a {
+    display: block;
 	}
 }
 @media (max-width: 768px) {
