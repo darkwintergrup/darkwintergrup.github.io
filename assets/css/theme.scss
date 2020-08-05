@@ -692,11 +692,25 @@ body, input, button, select, optgroup, textarea {
 #menu ul li {
     border-bottom: 1px solid #f1f1f1;
 }
-.dwhome-css a {
-	padding: 5px;
+.dwhome-css {
+	max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-
+.dwhome-css a {
+	background: white;
+    color: black;
+    margin-right: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+.dwhome-css a:hover {
+    text-decoration: none;
+    color: #00c5a1;
+}
 
 
 
