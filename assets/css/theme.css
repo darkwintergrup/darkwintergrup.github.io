@@ -19,7 +19,7 @@ $enable-rounded: false;
 
 // general
 body, input, button, select, optgroup, textarea {   
-    font-family:Sen;
+    font-family: 'DM Sans', sans-serif;
 }
 body {
     line-height:1.7;
@@ -655,7 +655,7 @@ margin: 5rem 0 0 0 !important;
     margin-right: 50px;
 }
 body, input, button, select, optgroup, textarea {
-    font-family: 'DM Sans' !important;
+    font-family: 'DM Sans', sans-serif !important;
 }
 .article-post {
     background-color: #fff;
