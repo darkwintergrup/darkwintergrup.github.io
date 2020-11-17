@@ -15,6 +15,7 @@ $enable-rounded: false;
 @import 'bootstrap/bootstrap';
 @import 'stars';
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 // general
 body, input, button, select, optgroup, textarea {   
